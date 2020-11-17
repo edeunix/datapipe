@@ -1,2 +1,2 @@
 influxdb
-confluent-kafka
+confluent-kafka==1.3.0
