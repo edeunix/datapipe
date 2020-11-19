@@ -4,12 +4,14 @@ Datapipe project
 Steps:
 
 -Create KSQL commands file (commands.sql)
+-Need to be put in ksql_cli container, specifically in /srv/docker/ksql/device_count/ folder
 	cd ksql/device_count; python gen_sql.py
 
 -Bring up all services: 
 	cd docker; docker-compose up -d --force-recreate --build
 
 -Set up grafana dashboard (first time or if not using persistent storage to local volume)
+- Follow this tutorial: https://grafana.com/docs/grafana/latest/datasources/influxdb/
 
 -Use producer program to generate data
 	cd producer; python producer_confluent.py -i data_all.json -t time
