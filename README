@@ -9,7 +9,7 @@ Etapas:
 -- Seja root, ou utilize sudo em todos os comandos.
 0.1) sudo su
 0.2) apt update
-0.3) apt upgarde
+0.3) apt upgrade
 0.4) apt install python docker docker-compose
 0.5) curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
 0.6) python get-pip.py
